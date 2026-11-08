@@ -51,6 +51,12 @@ Cloud computing is a specialised form of distributed computing that introduces u
 
 ### Scaling methods
 
+- Horizontal scaling: allocating or releasing of IT resources (same
+  type)
+
+- Vertical scaling: higher or lower capacity of the current IT
+  resources (less common due to downtime)
+
 | Horizontal Scaling  | Vertical Scaling                   |
 | ------------------- | ---------------------------------- |
 | Add more servers    | Upgrade CPU/RAM of existing server |
