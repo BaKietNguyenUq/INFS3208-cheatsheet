@@ -536,12 +536,13 @@ Fight Booking system use CP
 
 ## Index tool
 
-| FAISS Index         | Description                                                        |
-| ------------------- | ------------------------------------------------------------------ |
-| **IndexIVFFlat** ✅ | Partitions vectors into clusters for faster searching.             |
-| **IndexFlatIP**     | Exact similarity search using inner product.                       |
-| **IndexHNSW**       | Uses a hierarchical graph for approximate nearest-neighbor search. |
-| **IndexLSH**        | Uses locality-sensitive hashing for approximate similarity search. |
+| FAISS Index      | Description                                                        |
+| ---------------- | ------------------------------------------------------------------ |
+| **IndexIVFFlat** | Partitions vectors into clusters for faster searching.             |
+| **IndexFlatL2**  | brute-force search in a small dataset                              |
+| **IndexFlatIP**  | Exact similarity search using inner product.                       |
+| **IndexHNSW**    | Uses a hierarchical graph for approximate nearest-neighbor search. |
+| **IndexLSH**     | Uses locality-sensitive hashing for approximate similarity search. |
 
 ## SQL vs NoSQL
 
