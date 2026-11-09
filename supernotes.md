@@ -278,6 +278,12 @@ Cloud Providers organise IT resources by regions and zones.
 
 ## K8s concepts and components
 
+### Services
+
+- ClusterIP (default): expose the port only inside the cluster
+- NodePort: expose the target port on every node to the outside
+- LoadBalancer: Uses an external load balancer to expose the service and distribute traffic.
+
 ### Control Plane (Master Node)
 
 - Manages the (worker) nodes
@@ -500,7 +506,8 @@ generation of contextually relevant and accurate responses.
   - Examples: MongoDB, CouchDB, etc.
 
 - Wide-Column (Column-Family) stores
-  - A column family is a collection of rows and columns, where each row has a unique key and each column has a name, value, and timestamp.
+  - A column family is a collection of rows and columns,
+    where each row has a unique key and each column has a name, value, and timestamp.
   - Examples: BigTable, Hbase, Cassandra, etc.
 
 - Graph databases
@@ -609,6 +616,7 @@ Lazy evaluation means Spark delays executing transformations until an action is 
 
 - It allows Spark to optimise the execution plan,
 - Reducing unnecessary computations
+- Reduce number of passes (storage in disk)
 - Improving performance.
 
 ### RDD Lineage Graph
